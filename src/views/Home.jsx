@@ -3,10 +3,13 @@ import { Container } from "react-bootstrap";
 export default () => {
   return (
     <Container className="text-center">
-      <h1 className="pt-5">
-        Bienvenido maestro Pokemón <span className="fw-bold">Happy Cake</span> 
-      </h1>
-      <h6> El lugar de los pasteles felices </h6> 
+      <h1 className="pt-5">  Bienvenido maestro Pokemón </h1>
+      <img
+          height="200px"
+          //src="https://gifimage.net/wp-content/uploads/2018/04/pokemon-logo-gif-3.gif"
+          src="https://c.tenor.com/fCvghb3z3MEAAAAj/pokemon-pikachu.gif"
+          alt=""
+        />      
     </Container>
   );
 };

@@ -1,19 +1,22 @@
-import { Navbar, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Navbar } from "react-bootstrap";
 
-export default function Navigation() {
+const NavBar = () => {
   return (
-    <>
-      <Navbar bg="primary" variant="light">
-        <Container className="justify-content">          
-          <Link to="/" className="text-white ms-3 text-decoration-none">
-          🗺 Home
-          </Link>          
-          <Link to="/pokemones" className="text-white ms-3 text-decoration-none">
-          Pokemones
-          </Link>
-        </Container>
-      </Navbar>
-    </>
+    <Navbar className="d-flex justify-content-between px-5"  variant="light"  style={{ background: "rgb(44 77 143)" }} >
+      <Navbar.Brand>
+        <img
+          width="100"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          alt=""
+        />
+      </Navbar.Brand>
+      <div className="d-flex links">
+        <NavLink className={({ isActive }) => (isActive ? "active" : undefined)} to="/">  Home      </NavLink>
+        <NavLink className={({ isActive }) => (isActive ? "active" : undefined)}to="/pokemones"> {" "} Pokemones{" "}  </NavLink>
+      </div>
+    </Navbar>
   );
-}
+};
+
+export default NavBar;
