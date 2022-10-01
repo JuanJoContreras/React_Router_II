@@ -39,7 +39,7 @@ export default function Pokemones() {
           onChange={(e) => setPokemonSelected(e.target.value)}
         >
           <option value="" disabled>
-            Puchamones
+            Pokemones
           </option>
           {pokemones.map(({ name }, i) => (
             <option key={i} value={name}>

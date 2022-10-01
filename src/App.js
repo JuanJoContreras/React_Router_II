@@ -1,4 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./Style.css";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -17,7 +19,7 @@ export default function App() {
       <Navbar />
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/pokemones/" element={<Pokemones />} />        
+        <Route path="/pokemones" element={<Pokemones />} />        
         <Route path="//pokemones/:name" element={<Detalle />} />
         <Route path="*" element={<NotFound />} />
         </Routes>

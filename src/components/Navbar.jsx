@@ -7,7 +7,8 @@ const NavBar = () => {
       <Navbar.Brand>
         <img
           width="100"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          //src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png"
+          src="https://i.pinimg.com/originals/40/c1/4e/40c14e954cc2f64ee555ab3ed8d4c4ac.jpg"          
           alt=""
         />
       </Navbar.Brand>
