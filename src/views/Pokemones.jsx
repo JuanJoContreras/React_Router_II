@@ -47,7 +47,7 @@ export default function Pokemones() {
             </option>
           ))}
         </select>
-        <Button onClick={irToPokemonDetalle} variant="dark" className="mt-3">Ver Detalle </Button>
+        <Button onClick={irToPokemonDetalle} variant="primary" className="mt-3">Ver Detalle </Button>
       </div>
     </div>
   </>    

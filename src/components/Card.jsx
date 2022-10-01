@@ -2,9 +2,10 @@ import { Card } from "react-bootstrap";
 
 export default function PokemonCard({ pokemon }) {
   const { name, stats, src, types } = pokemon;
+
   return (
     <Card style={{ width: "34rem" }} className="mt-5 mx-auto flex-row p-2">
-      <Card.Img height="300" variant="top" src={src} />
+      <Card.Img height="300px" variant="top" src={src} />
       <Card.Body>
         <Card.Title className="fw-bold">{name}</Card.Title>
         <ul className="text-left">
